@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".Signin2">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_logo_foreground"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_height="match_parent">
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:id="@+id/drivername"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:textColor="@color/colorPrimaryDark"
+                android:singleLine="true"
+                android:hint="Name" />
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:id="@+id/drivercnic"
+                android:textColor="@color/colorPrimaryDark"
+                android:singleLine="true"
+                android:hint="CNIC"/>
+            <TextView
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/driverdob"
+                android:text="Select Date of Birth"
+                android:gravity="center_vertical"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:id="@+id/driverfathername"
+                android:maxLength="20"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:singleLine="true"
+                android:hint="Father's Name"/>
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:id="@+id/drivercontact"
+                android:inputType="phone"
+                android:textColor="@color/colorPrimaryDark"
+               android:singleLine="true"
+                android:hint="Mobile number"/>
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:id="@+id/driverfamilycontact"
+                android:inputType="phone"
+                android:textColor="@color/colorPrimaryDark"
+               android:singleLine="true"
+                android:hint="Family's Contact #"/>
+
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/driveraddress"
+                android:inputType="text"
+                android:maxLength="70"
+                android:textColor="@color/colorPrimaryDark"
+                android:singleLine="true"
+                android:hint="Address"/>
+
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:textColor="@color/colorPrimaryDark"
+               android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:id="@+id/signinemail"
+                android:hint="Email"/>
+
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:id="@+id/signinpassword"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimaryDark"
+                android:singleLine="true"
+                android:maxLength="15"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signtologbtn"
+
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Already Have Account Login" />
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/signinbtn"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/loginbuttonstyle"
+                        android:padding="3dp"
+                        android:elevation="7dp"
+                        android:text="Signup"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"/>
+             </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

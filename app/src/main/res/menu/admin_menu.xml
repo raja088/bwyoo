@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/adminprofile"
+            android:title="Profile"
+            android:icon="@drawable/ic_outline_person_outline_24"
+            app:showAsAction="never">
+        </item>
+        <item
+                android:id="@+id/adminsearch"
+                android:title="Search"
+                android:icon="@drawable/outline_search_white_18dp"
+                app:showAsAction="always"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+                android:id="@+id/admincomplaints"
+                android:title="Complaints"
+                android:icon="@drawable/outline_feedback_white_18dp"
+                app:showAsAction="never"/>
+        <item
+            android:id="@+id/adminreport"
+            android:title="Report"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/monthly"
+            android:title="Monthly Report"
+            app:showAsAction="never"/>
+        <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                app:showAsAction="never"/>
+
+</menu>

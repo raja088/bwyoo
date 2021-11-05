@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/horizontal"
+    android:layout_height="wrap_content">
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+
+       >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="#000000"
+            android:id="@+id/Charges"
+
+            android:text="Charges"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+
+            android:id="@+id/Exit"
+            android:buttonTint="#000000"
+            android:text="Exit"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Entry"
+            android:checked="true"
+            android:buttonTint="#000000"
+            android:text="Entry"/>
+
+
+
+    </RadioGroup>
+</RelativeLayout>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valetName"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="70dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valetName"
+        android:layout_marginTop="40dp"
+        android:text="dummy"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/res1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="dummy"
+        android:textSize="20dp"
+
+        android:layout_below="@id/valetName"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/res2"
+        />
+
+
+</RelativeLayout>

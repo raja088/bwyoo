@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".DriverComplaints">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        app:elevation="5dp"
+        android:id="@+id/profileappbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/drivercomptv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Complaint"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="22dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:layout_below="@id/profileappbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dcomplaint_et"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Enter your complaint here"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/dcomplaint_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dcomplaint_et"
+        android:textColor="@color/white"
+        android:text="Send Complaint"
+        android:textSize="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/loginbuttonstyle"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>

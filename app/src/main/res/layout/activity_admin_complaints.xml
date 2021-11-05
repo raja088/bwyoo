@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".AdminComplaints">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        app:elevation="5dp"
+        android:id="@+id/acomplaintappbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/acomplaint_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complaints"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="22dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Complain"
+        android:id="@+id/complian"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_below="@id/acomplaintappbar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/acomplaintappbar"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:id="@+id/admincomplaintrv">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

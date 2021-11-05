@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.finalyearprojectstudent.CutomerBookingParkingId">
+
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customermobno"
+        android:inputType="phone"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:singleLine="true"
+        android:hint="Mobile number"/>
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/customermobno"
+        android:layout_height="wrap_content"
+        android:id="@+id/carno"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:textColor="@color/colorPrimaryDark"
+        android:singleLine="true"
+        android:hint="Car number"/>
+    <Button
+        android:id="@+id/bookbtn"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbuttonstyle"
+        android:padding="3dp"
+        android:elevation="7dp"
+        android:text="Book Slot"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/carno"
+      />
+
+
+
+
+</RelativeLayout>
